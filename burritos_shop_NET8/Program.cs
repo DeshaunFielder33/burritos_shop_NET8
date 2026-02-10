@@ -84,7 +84,29 @@ class Program
         Console.WriteLine("------------------------------------");
 
         // Please Enter Your For Loop Codes Here
+        decimal unitprice = 9.00m;
+        decimal unitcost = 3.80m;
+        decimal mincost = 1200m;
 
+        decimal burrito = 0m;
+
+        for (burrito = 0; burrito < 100000; burrito++)
+        {
+            decimal revenue = burrito * unitprice;
+            decimal cost = mincost + (burrito * unitcost);
+            decimal profit = revenue - cost;
+            Console.WriteLine($"After selling {burrito} burritos: profit {profit:F2}.");
+            if (profit > 0)
+            {
+                Console.WriteLine("------------------------------------");
+                Console.WriteLine("Success! Profit reached.");
+                Console.WriteLine($"Number of Burritos: {burrito}");
+                Console.WriteLine($"Revenue: ${revenue:F2}");
+                Console.WriteLine($"Cost: ${cost:F2}");
+                Console.WriteLine($"Profit: ${profit:F2}");
+                break;
+            }
+        }
 
 
         Console.WriteLine("\nPress any key to return to menu...");
@@ -99,9 +121,30 @@ class Program
         Console.WriteLine("------------------------------------");
 
         // Please Enter Your While Loop Codes Here
+        decimal unitprice = 9.00m;
+        decimal unitcost = 3.80m;
+        decimal mincost = 1200m;
 
+        decimal burrito = 0m;
+        while (true)
+        {
+            decimal revenue = burrito * unitprice;
+            decimal cost = mincost + (burrito * unitcost);
+            decimal profit = revenue - cost;
+            Console.WriteLine($"After selling {burrito} burritos: profit {profit:F2}.");
 
-
+            if (profit > 0)
+            {
+                Console.WriteLine("------------------------------------");
+                Console.WriteLine("Success! Profit reached.");
+                Console.WriteLine($"Number of Burritos: {burrito}");
+                Console.WriteLine($"Revenue: ${revenue:F2}");
+                Console.WriteLine($"Cost: ${cost:F2}");
+                Console.WriteLine($"Profit: ${profit:F2}");
+                break;
+            }
+            burrito++;
+        }
         Console.WriteLine("\nPress any key to return to menu...");
         Console.ReadKey();
 
@@ -115,8 +158,29 @@ class Program
         Console.WriteLine("------------------------------------");
 
         // Please Enter Your Do-While Loop Codes Here
+        decimal unitprice = 9.00m;
+        decimal unitcost = 3.80m;
+        decimal mincost = 1200m;
 
-
+        decimal burrito = 0m;
+        do
+        {
+            decimal revenue = burrito * unitprice;
+            decimal cost = mincost + (burrito * unitcost);
+            decimal profit = revenue - cost;
+            Console.WriteLine($"After selling {burrito} burritos: profit {profit:F2}.");
+            if (profit > 0)
+            {
+                Console.WriteLine("------------------------------------");
+                Console.WriteLine("Success! Profit reached.");
+                Console.WriteLine($"Number of Burritos: {burrito}");
+                Console.WriteLine($"Revenue: ${revenue:F2}");
+                Console.WriteLine($"Cost: ${cost:F2}");
+                Console.WriteLine($"Profit: ${profit:F2}");
+                break;
+            }
+            burrito++;
+        } while (true);
 
         Console.WriteLine("\nPress any key to return to menu...");
         Console.ReadKey();
